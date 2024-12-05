@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="Booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./img/location_on_16dp_75FB4C_FILL0_wght400_GRAD0_opsz48.png" type="icon/png">
+    <script src="./jquery-3.7.1.min.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon" style="font-family: logo2;"><img src="./img/location_on_16dp_75FB4C_FILL0_wght400_GRAD0_opsz48.png" alt="logo-icon">Tourist</span>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" style="font-family: all2;">Home</a></li>
+            <li><a href="aboutus.html" style="font-family: all2;">About</a></li>
+            <li><a href="Services.html" style="font-family: all2;">Services</a></li>
+            <li><a href="Packages.html" style="font-family: all2;">Packages</a></li>
+            <!-- Pages Dropdown Menu -->
+            <li class="pages">
+                <a href="#" style="font-family: all2;">Pages</a>
+                <ul class="dropdown" id="page">
+                    <li><a href="Destination.html" style="font-family: all2;">Destination</a></li>
+                    <li><a href="Booking.html" style="font-family: all2;">Booking</a></li>
+                    <li class="submenu">
+                        <a href="Travelguid.html" style="font-family: all2;">Traveling Guide</a>
+                        <ul class="dropdown-submenu" id="page">
+                            <li><a href="Destination.html" style="font-family: all2;">Travel Tips</a></li>
+                            <li><a href="#" style="font-family: all2;">Itineraries</a></li>
+                            <li><a href="#" style="font-family: all2;">Packing List</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Testimonial.html" style="font-family: all2;">Testimonial</a></li>
+                </ul>
+            </li>
+            <li><a href="./contect.html" style="font-family: all2;">Contact</a></li>
+            <li><a href="login.html" class="register-btn" style="font-family: all2;">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay">
+            <h1 id="p1" style=" font-family: serveces2;">Booking</h1>
+            <p id="p1" style="font-family: para;">Explore the world, experience new cultures, and create memories</p>
+            <div class="search-bar">
+                <a href="index.html" style=" font-family: serveces2; color: rgb(32, 228, 14); text-decoration: none;">Home&nbsp;&nbsp;&nbsp;/</a><br>&nbsp;
+                <a  href="#" style=" font-family: serveces2;color: aliceblue; text-decoration: none;">Booking</a>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content change this  -->
+     <!-- Awesome Packages -->
+    <section>
+        <div class="heading">
+            <h4 style="font-family: serveces; color: rgb(51, 212, 18);">BOOKING</h4>&nbsp;&nbsp;&nbsp;
+            <h1 style=" font-family: serveces2;">WELCOME</h1>
+        </div>
+        <section class="packages">
+            <div class="package-item">
+                <img src="./img/packeges/Nepal/nature2.jpg" alt="Nepal">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Nepal</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 3 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 2 Person</span>
+                    </div>
+                    <div class="price">₹ 15,000</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">A hub for adventure lovers and home to Mt. Everest, the world's tallest peak, Nepal is a Himalayan country sandwiched between India and China.</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="package-item">
+                <img src="./img/packeges/Bhutan/a2.jpg" alt="Bhutan">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Bhutan</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 3 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 2 Person</span>
+                    </div>
+                    <div class="price">₹ 16,600</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">The Land of the Thunder Dragon Bhutan nestles in the mountainous regions of the Eastern Himalayas and is one of the cleanest countries in the South Asian region.</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="package-item">
+                <img src="./img/packeges/Bangladesh/a1.jpg" alt="Bangladesh">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Bangladesh</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 3 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 2 Person</span>
+                    </div>
+                    <div class="price">₹ 15,400</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">One of the largest cities of the World, Dhaka is Bangladesh's capital city, as well as its political, cultural and economic centre.</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package-item">
+                <img src="./img/packeges/Sri Lanka/SRI-LANKA.jpg" alt="SriLanka">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> SriLanka</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 3 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 2 Person</span>
+                    </div>
+                    <div class="price">₹ 9,750</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">Sri Lanka is an island nation located in the Indian Ocean known for its spectacular beaches, thousand-year-old Buddhist temples</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="package-item">
+                <img src="./img/packeges/Kyrgyzstan/a1.jpg" alt="Kyrgyzstan">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i>Kyrgyzstan</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 25 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 4 Person</span>
+                    </div>
+                    <div class="price">₹ 73,650</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">Kyrgyzstan, nestled in the heart of Central Asia, is a treasure trove of natural beauty and nomadic culture</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="package-item">
+                <img src="./img/packeges/Kazakhstan/Almaty Lake.jpg" alt="Kazakhstan">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Kazakhstan</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 15 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 3 Person</span>
+                    </div>
+                    <div class="price">₹ 37,326</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">Kazakhstan, the world's largest landlocked country is a fascinating destination blending modernity with rich cultural heritage.</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>  
+         </section>
+     <section>
+        <div class="heading">
+            <h4 style="font-family: serveces; color: rgb(51, 212, 18);">BOOKING</h4>&nbsp;&nbsp;&nbsp;
+            <h1 style=" font-family: serveces2;">Best Packages</h1>
+        </div>
+        <section class="packages">
+            <div class="package-item">
+                <img src="./img/packeges/Thailand/Thailand.jpg" alt="Thailand">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Thailand</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 3 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 2 Person</span>
+                    </div>
+                    <div class="price">$149.00</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">Thailand, with its stunning beaches, vibrant cities, and rich cultural heritage, is a year-round destination that caters to diverse traveller preferences.</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="package-item">
+                <img src="./img/packeges/Indonesia/a1.jpg" alt="Indonesia">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Indonesia</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 3 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 2 Person</span>
+                    </div>
+                    <div class="price">$139.00</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">Indonesia, in Southeast Asia, is an archipelago nation consisting of over 17,000 islands.Travellers are also treated to various Indonesia famous food.</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="package-item">
+                <img src="./img/packeges/Malaysia/malaysia.jpg" alt="Malaysia">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt" ></i> Malaysia</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 3 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 2 Person</span>
+                    </div>
+                    <div class="price">$189.00</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">Malaysia is a beautifully complex vacation destination,a land where ancient rainforests give way to multicultural city life.</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package-item">
+                <img src="./img/packeges/Uzbekistan/Uzbekistan.jpg" alt="Uzbekistan">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Uzbekistan</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 13 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 2 Person</span>
+                    </div>
+                    <div class="price">$175.00</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">Uzbekistan, located in the heart of Central Asia, is a treasure trove of history, culture, and architectural marvels</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="package-item">
+                <img src="./img/packeges/Iran/Afsharid ruler of Iran.jpg" alt="Iran">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Iran</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 7 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 5 Person</span>
+                    </div>
+                    <div class="price">$138.00</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">Iran, a land of rich history and diverse cultures, invites you to explore its ancient ruins, stunning architecture</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="package-item">
+                <img src="./img/packeges/Azerbaijan/Palace of the Shirvanshahs.jpg" alt="Azerbaijan">
+                <div class="details">
+                    <div class="info">
+                        <span class="location"><i class="fas fa-map-marker-alt" ></i> Azerbaijan</span>
+                        <span class="days"><i class="fas fa-calendar-alt"></i> 3 days</span>
+                        <span class="people"><i class="fas fa-user"></i> 2 Person</span>
+                    </div>
+                    <div class="price">$122.00</div>
+                    <div class="rating">
+                        <span>★★★★★</span>
+                    </div>
+                    <p class="p1" style="font-family: all2;">Azerbaijan, often referred to as "The Land of Fire," due to its ancient Zoroastrian roots, is located at the crossroads of Eastern Europe and Western Asia</p>
+                    <div class="buttons">
+                        <a class="btn read-more" style="text-decoration: none;" href="productby.html">Read More</a>
+                        <button class="btn book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $(".book-now").on("click", function () {
+                        let location = $(this).closest(".details").find(".location").text().trim();
+                        let days = $(this).closest(".details").find(".days").text().trim();
+                        let people = $(this).closest(".details").find(".people").text().trim();
+                        let price = $(this).closest(".details").find(".price").text().trim();
+                        let confirmBooking = confirm(
+                            `Confirm your booking:\nLocation: ${location}\nDuration: ${days}\nPeople: ${people}\nPrice: ${price}\n\nClick OK to proceed to payment.`
+                        );
+            
+                        if (confirmBooking) {
+                            window.location.href = "login.html?location=" + 
+                                encodeURIComponent(location) + 
+                                "&days=" + 
+                                encodeURIComponent(days) + 
+                                "&people=" + 
+                                encodeURIComponent(people) + 
+                                "&price=" + 
+                                encodeURIComponent(price);
+                        }
+                    });
+                });
+            
+            </script>            
+         </section>
+     <!-- Book now Section -->
+     <section>
+        <div class="heading">
+            <h4 style="font-family: serveces; color: rgb(51, 212, 18);">PROCESS</h4>&nbsp;&nbsp;&nbsp;
+            <h1 style=" font-family: serveces2;">Book Now</h1>
+        </div>
+    <section class="booking-section6">
+        <div class="left-content6">
+            <h2 id="aabhi2" style="font-family: serveces;">BOOKING</h2>
+            <h1 style=" font-family: serveces2;">Online Booking</h1>
+            <p style="font-family: all2;">
+                Tempor erat elitr rebus at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
+            <p style="font-family: all2;">
+                Tempor erat elitr rebus at clita. Diam dolor sit amet diam eos lorem sit clita duo justo magna dolore erat amet.
+            </p>
+            <button class="btn6 read-more6" style="font-family: all2;">Read More</button>
+        </div>
+        
+        <div class="right-content6">
+            <h2 class="abhi" style=" font-family: serveces2;">Book A Tour</h2>
+            <form >
+                <div class="form-group6">
+                    <input type="text" placeholder="Your Name" required style="font-family: all2;">
+                    <input type="email" placeholder="Your Email" required style="font-family: all2;">
+                </div>
+                <div class="form-group6">
+                    <input type="tel" placeholder="Mobile Number" required style="font-family: all2;">
+                    <select style="font-family: all2;">
+                        <option style="font-family: all2;" value="Country">Select Country</option>
+                        <option style="font-family: all2;" value="India">India</option>
+                        <option style="font-family: all2;" value="USA">USA</option>
+                        <option style="font-family: all2;" value="UK">UK</option>
+                        <option style="font-family: all2;" value="Australia">Australia</option>
+                        <option style="font-family: all2;" value="Canada">Canada</option>
+                        <!-- You can add more countries as per your requirement -->
+                    </select>
+                </div>
+                <div class="form-group6">
+                    <input type="datetime-local" placeholder="Date & Time" required style="font-family: all2;">
+                    <select style="font-family: all2;">
+                        <option style="font-family: all2;">Destination 1</option>
+                        <option>Destination 2</option>
+                        <option>Destination 3</option>
+                        <option>Destination 4</option>
+                        <option>Destination 5</option>
+                        <option>Destination 6</option>
+                    </select>
+                </div>
+                <textarea placeholder="Special Request" style="font-family: all2;"></textarea>
+                <button type="submit" class="btn6 book-now6" style="font-family: all2;">Book Now</button>
+            </form>
+        </div>
+    </section>
+    <!-- 3 step Easy -->
+    <section class="process99">
+        <div class="heading">
+            <h4 style="font-family: serveces; color: rgb(51, 212, 18);">PROCESS</h4>&nbsp;&nbsp;&nbsp;
+            <h1 style=" font-family: serveces2;">Easy Steps</h1>
+        </div>
+        <br><br><br><br><br>
+        <div class="process-steps99">
+            <div class="step99">
+                <div class="step-icon99">
+                    <i class="bi bi-globe-americas fa-3x"></i>
+                </div>
+                <h3 class="step-title99" style=" font-family: serveces2;">Choose A Destination</h3>
+                <p class="step-description99" style="font-family: all2;">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+            </div>
+            <div class="step99">
+                <div class="step-icon99">
+                    <i class="bi bi-currency-dollar fa-3x"></i>
+                </div>
+                <h3 class="step-title99" style=" font-family: serveces2;">Pay Online</h3>
+                <p class="step-description99" style="font-family: all2;">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+            </div>
+            <div class="step99">
+                <div class="step-icon99">
+                    <i class="icon fas fa-plane fa-3x"></i>
+                </div>
+                <h3 class="step-title99" style=" font-family: serveces2;">Fly Today</h3>
+                <p class="step-description99" style="font-family: all2;">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+            </div>
+        </div>
+    </section> <br><br><br><br><br>
+
+    <!-- footer Section -->
+<section>
+    <footer class="footer8">
+        <div class="container8">
+            <div class="row8">
+                <!-- Company Section -->
+                <div class="footer-col8">
+                    <h4 style=" font-family: serveces2;">Company</h4>
+                    <ul>
+                        <li><a href="aboutus.html" style="font-family: all2;">About Us</a></li>
+                        <li><a href="contect.html" style="font-family: all2;">Contact Us</a></li>
+                        <li><a href="#" style="font-family: all2;">Privacy Policy</a></li>
+                        <li><a href="#" style="font-family: all2;">Terms & Condition</a></li>
+                        <li><a href="#" style="font-family: all2;">FAQs & Help</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="footer-col8">
+                    <h4 style=" font-family: serveces2;">Contact</h4>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/place/Kothrud,+Pune,+Maharashtra/" target="_blank" style="font-family: all2;">GuideTraveling Privete Ltd Kothrud, Pune, India</a></li>
+                        <li><a href="+918975121184" target="_blank" style="font-family: all2;">+918975121184</a></li>
+                        <li><a href="guideinfo@traveling.com" target="_blank" style="font-family: all2;">guideinfo@traveling.com</a></li>
+                    </ul>
+                    <div class="social-links9">
+                        <a href="https://www.facebook.com/" target="_blank"><i style="color: #5890FF" class="bi bi-facebook fa-2x "></i></a>
+                        <a href="https://x.com/i/flow" target="_blank"><i style="color: #1DA1F2" class="bi bi-twitter fa-2x"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i style="color: #ff0000" class="bi bi-youtube fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i style="color: #0077B5" class="bi bi-linkedin fa-2x"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i style="color: #f21b0c" class="fab fa-instagram fa-2x"></i></a>
+                        </a>
+                    </div>
+                </div>
+                <!-- Gallery Section -->
+                <div class="footer-col8">
+                    <h4 style=" font-family: serveces2;">Gallery</h4>
+                    <div class="gallery8">
+                        <a href="Gallary.html"><img src="./img2/p1.jpg" alt="Image 1"></a>
+                        <a href="Gallary.html"><img src="./img2/p2.jpg" alt="Image 2"></a>
+                        <a href="Gallary.html"><img src="./img2/p3.jpg" alt="Image 3"></a>
+                        <a href="Gallary.html"><img src="./img2/p4.jpg" alt="Image 4"></a>
+                        <a href="Gallary.html"><img src="./img2/p5.jpg" alt="Image 5"></a>
+                        <a href="Gallary.html"><img src="./img2/p2.jpg" alt="Image 6"></a>
+                    </div>
+                </div>
+                <!-- Newsletter Section -->
+                <div class="footer-col8">
+                    <h4 style=" font-family: serveces2;">Newsletter</h4>
+                    <p style="font-family: all2;">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <form class="newsletter-form8">
+                        <input type="email" placeholder="Your email" required style="font-family: all2;">
+                        <button type="submit" style="font-family: all2;">SignUp</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom8">
+                <p style="font-family: all2;">&copy; GuideTraveling, All Right Reserved. Designed by Abhi Lanke</p>
+            </div>
+        </div>
+    </footer>
+</section>
+
+</body>
+</html>

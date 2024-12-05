@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Gallary.css">
+    <link rel="icon" href="./img/location_on_16dp_75FB4C_FILL0_wght400_GRAD0_opsz48.png" type="icon/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon" style="font-family: logo2;"><img src="./img/location_on_16dp_75FB4C_FILL0_wght400_GRAD0_opsz48.png" alt="logo-icon">Tourist</span>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" style="font-family: all2;">Home</a></li>
+            <li><a href="aboutus.html" style="font-family: all2;">About</a></li>
+            <li><a href="Services.html" style="font-family: all2;">Services</a></li>
+            <li><a href="Packages.html" style="font-family: all2;">Packages</a></li>
+            <!-- Pages Dropdown Menu -->
+            <li class="pages">
+                <a href="#" style="font-family: all2;">Pages</a>
+                <ul class="dropdown" id="page">
+                    <li><a href="Destination.html" style="font-family: all2;">Destination</a></li>
+                    <li><a href="Booking.html" style="font-family: all2;">Booking</a></li>
+                    <li class="submenu">
+                        <a href="Travelguid.html" style="font-family: all2;">Traveling Guide</a>
+                        <ul class="dropdown-submenu" id="page">
+                            <li><a href="Destination.html" style="font-family: all2;">Travel Tips</a></li>
+                            <li><a href="#" style="font-family: all2;">Itineraries</a></li>
+                            <li><a href="#" style="font-family: all2;">Packing List</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Testimonial.html" style="font-family: all2;">Testimonial</a></li>
+                </ul>
+            </li>
+            <li><a href="./contect.html" style="font-family: all2;">Contact</a></li>
+            <li><a href="login.html" class="register-btn" style="font-family: all2;">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay">
+            <h1 id="p1" style=" font-family: serveces2;">Gallery</h1>
+            <p id="p1" style="font-family: para;">Explore the world, experience new cultures, and create memories</p>
+            <div class="search-bar">
+                <a href="index.html" style=" font-family: serveces2; color: rgb(32, 228, 14); text-decoration: none;">Home&nbsp;&nbsp;&nbsp;/</a><br>&nbsp;&nbsp;
+                <a href="#" style=" font-family: serveces2; color: rgb(32, 228, 14); text-decoration: none;">Pages&nbsp;&nbsp;&nbsp;/</a><br>&nbsp;&nbsp;
+                <a  href="#" style=" font-family: serveces2;color: aliceblue; text-decoration: none;">Gallery</a>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content change this  -->
+     
+     <section>
+        <div class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br><br>
+            <h4 style="font-family: serveces; color: rgb(51, 212, 18);">GALLERY</h4>&nbsp;&nbsp;&nbsp;
+            <h1 style=" font-family: serveces2;">Images</h1>
+        </div>
+    <section class="gallery">
+        <div class="main-image">
+            <!-- Main image to be updated when a thumbnail is clicked -->
+            <img id="main-img" src="./img/packeges/Azerbaijan/Azerbaijan.jpg" alt="Azerbaijan">
+            <p id="caption" style=" font-family: serveces2;" class="caption">Azerbaijan</p>
+        </div>
+        <div class="testimonial-carousel">
+            <div class="thumbnail-container">
+            <div class="testimonial-item" onclick="updateMainImage('./img/packeges/Azerbaijan/Azerbaijani Navy.jpg', 'Azerbaijani')">
+                <img src="./img/packeges/Azerbaijan/Azerbaijani Navy.jpg" alt="Azerbaijani" style="width: 300px; height: 300px;">
+                <p style=" font-family: serveces2;">Azerbaijani Navy</p>
+            </div>
+            <div class="testimonial-item" onclick="updateMainImage('./img/packeges/Azerbaijan/Caucasus Mountains.jpg', 'Caucasus')">
+                <img src="./img/packeges/Azerbaijan/Caucasus Mountains.jpg" alt="Caucasus" style="width: 300px; height: 300px;">
+                <p style=" font-family: serveces2;">Caucasus</p>
+            </div>
+            <div class="testimonial-item" onclick="updateMainImage('./img/packeges/Azerbaijan/Maiden Tower.jpg', 'Maiden')">
+                <img src="./img/packeges/Azerbaijan/Maiden Tower.jpg" alt="Maiden" style="width: 300px; height: 300px;">
+                <p style=" font-family: serveces2;">Maiden Tower</p>
+            </div>
+            <div class="testimonial-item" onclick="updateMainImage('./img/packeges/Azerbaijan/Mount Bazarduzu.jpg', 'Mount')">
+                <img src="./img/packeges/Azerbaijan/Mount Bazarduzu.jpg" alt="Mount" style="width: 300px; height: 300px;">
+                <p style=" font-family: serveces2;">Mount Bazarduzu</p>
+            </div>
+            <div class="testimonial-item" onclick="updateMainImage('./img/packeges/Azerbaijan/Murovdag.jpg', 'Murovdag')">
+                <img src="./img/packeges/Azerbaijan/Murovdag.jpg" alt="Murovdag" style="width: 300px; height: 300px;">
+                <p style=" font-family: serveces2;">Murovdag</p>
+            </div>
+            <div class="testimonial-item" onclick="updateMainImage('./img/packeges/Azerbaijan/Palace of the Shirvanshahs.jpg', 'Shirvanshahs')">
+                <img src="./img/packeges/Azerbaijan/Palace of the Shirvanshahs.jpg" alt="Shirvanshahs" style="width: 300px; height: 300px;">
+                <p style=" font-family: serveces2;">Shirvanshahs</p>
+            </div>
+            <div class="testimonial-item" onclick="updateMainImage('./img/packeges/Azerbaijan/Port of Baku on the Caspian Sea.jpg', ' Caspian')">
+                <img src="./img/packeges/Azerbaijan/Port of Baku on the Caspian Sea.jpg" alt=" Caspian" style="width: 300px; height: 300px;">
+                <p style=" font-family: serveces2;"> Caspian</p>
+            </div>
+            <div class="testimonial-item" onclick="updateMainImage('./img/packeges/Azerbaijan/Shahdag Mountain.jpg', 'Mountain')">
+                <img src="./img/packeges/Azerbaijan/Shahdag Mountain.jpg" alt="Mountain" style="width: 300px; height: 300px;">
+                <p style=" font-family: serveces2;">Shahdag Mountain</p>
+            </div>
+            <div class="testimonial-item" onclick="updateMainImage('./img/packeges/Azerbaijan/The landscape.jpg', 'landscape')">
+                <img src="./img/packeges/Azerbaijan/The landscape.jpg" alt="landscape" style="width: 300px; height: 300px;">
+                <p style=" font-family: serveces2;">landscape</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+</section>
+
+    <script>
+        // Function to update the main image and its caption
+        function updateMainImage(imageSrc, captionText) {
+            document.getElementById('main-img').src = imageSrc; // Change main image source
+            document.getElementById('caption').textContent = captionText; // Update caption
+        }
+    </script>
+
+
+
+    <!-- footer Section -->
+<section>
+    <footer class="footer8">
+        <div class="container8">
+            <div class="row8">
+                <!-- Company Section -->
+                <div class="footer-col8">
+                    <h4 style=" font-family: serveces2;">Company</h4>
+                    <ul>
+                        <li><a href="aboutus.html" style="font-family: all2;">About Us</a></li>
+                        <li><a href="contect.html" style="font-family: all2;">Contact Us</a></li>
+                        <li><a href="#" style="font-family: all2;">Privacy Policy</a></li>
+                        <li><a href="#" style="font-family: all2;">Terms & Condition</a></li>
+                        <li><a href="#" style="font-family: all2;">FAQs & Help</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="footer-col8">
+                    <h4 style=" font-family: serveces2;">Contact</h4>
+                    <ul>
+                        <li><a href="#" style="font-family: all2;">GuideTraveling Privete Ltd Kothrud, Pune, India</a></li>
+                        <li><a href="#" style="font-family: all2;">+918975121184</a></li>
+                        <li><a href="guideinfo@traveling.com" style="font-family: all2;">guideinfo@traveling.com</a></li>
+                    </ul>
+                    <div class="social-links9">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Gallery Section -->
+                <div class="footer-col8">
+                    <h4 style=" font-family: serveces2;">Gallery</h4>
+                    <div class="gallery8">
+                        <a href="#"><img src="./img2/p1.jpg" alt="Image 1"></a>
+                        <a href="#"><img src="./img2/p2.jpg" alt="Image 2"></a>
+                        <a href="#"><img src="./img2/p3.jpg" alt="Image 3"></a>
+                        <a href="#"><img src="./img2/p4.jpg" alt="Image 4"></a>
+                        <a href="#"><img src="./img2/p5.jpg" alt="Image 5"></a>
+                        <a href="#"><img src="./img2/p2.jpg" alt="Image 6"></a>
+                    </div>
+                </div>
+                <!-- Newsletter Section -->
+                <div class="footer-col8">
+                    <h4 style=" font-family: serveces2;">Newsletter</h4>
+                    <p style="font-family: all2;">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <form class="newsletter-form8">
+                        <input type="email" placeholder="Your email" required style="font-family: all2;">
+                        <button type="submit" style="font-family: all2;">SignUp</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom8">
+                <p style="font-family: all2;">&copy; GuideTraveling, All Right Reserved. Designed by Abhi Lanke</p>
+            </div>
+        </div>
+    </footer>
+</section>
+
+</body>
+</html>
