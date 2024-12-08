@@ -8,7 +8,7 @@
     <link rel="icon" href="./img/location_on_16dp_75FB4C_FILL0_wght400_GRAD0_opsz48.png" type="icon/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-   
+    <script src="./jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -93,7 +93,31 @@
                     <a href="#" class="view-packages" style=" font-family: serveces2; color: rgb(44, 218, 18);">View Packages</a>
                 </div>
                 <div class="right-column">
-                    <button class="get-offers" style="font-family: all2;">Get Package Offers</button>
+                    <button class="book-now" style="font-family: all2; background-color: rgb(44, 218, 18); color: white; border: none; padding: 10px 20px; cursor: pointer;">
+                        Book Now
+                    </button>
+                    <script>
+                        $(document).ready(function () {
+                            $(".book-now").on("click", function () {
+                                // Locate relevant details
+                                let location = $(".location").text().trim();
+                                let price = $(".price").text().trim();
+                    
+                                // Prompt the user for confirmation
+                                let confirmBooking = confirm(
+                                    `Confirm your booking:\nLocation: ${location}\nPrice: ${price}\n\nClick OK to proceed to payment.`
+                                );
+                    
+                                if (confirmBooking) {
+                                    // Redirect to the payment page
+                                    window.location.href = "Pay.html?location=" +
+                                        encodeURIComponent(location) +
+                                        "&price=" +
+                                        encodeURIComponent(price);
+                                }
+                            });
+                        });
+                    </script>
                     
                 </div>
             </div>
