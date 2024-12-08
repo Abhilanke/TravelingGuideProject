@@ -9,7 +9,6 @@
 <body>
     <h1>Processing Your Payment...</h1>
     <script>
-        // Function to get query parameters from the URL
         function getQueryParams() {
             const params = new URLSearchParams(window.location.search);
             return {
@@ -25,18 +24,18 @@
 
         // Initiate Razorpay payment
         const options = {
-            "key": "YOUR_RAZORPAY_API_KEY", // Replace with your Razorpay API Key
-            "amount": parseFloat(bookingDetails.price.replace(/₹|,/g, "")) * 100, // Amount in paise
+            "key": "YOUR_RAZORPAY_API_KEY", 
+            "amount": parseFloat(bookingDetails.price.replace(/₹|,/g, "")) * 100, 
             "currency": "INR",
             "name": "Travel Booking",
             "description": `Booking for ${bookingDetails.location}`,
-            "image": "./img/logo.png", // Optional company logo
+            "image": "./img/logo.png", 
             "handler": function (response) {
                 alert(`Payment Successful!\nPayment ID: ${response.razorpay_payment_id}`);
-                window.location.href = "success.html"; // Redirect to a success page
+                window.location.href = "index.html"; 
             },
             "prefill": {
-                "name": "Your Name", // Optionally replace with pre-filled user data
+                "name": "Your Name", 
                 "email": "your.email@example.com",
                 "contact": "1234567890"
             },
@@ -48,7 +47,6 @@
             }
         };
 
-        // Open Razorpay payment on page load
         window.onload = function () {
             const rzp = new Razorpay(options);
             rzp.open();
